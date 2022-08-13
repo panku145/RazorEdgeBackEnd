@@ -18,7 +18,7 @@ app.use(cookieParser());
 //   next();
 // });
 
-// const cors = require("cors");
+// const cors = require();
 
 // const corsOptions = {
 //   origin: "http://localhost:3000",
@@ -26,7 +26,10 @@ app.use(cookieParser());
 //   withCredentials: true,
 // };
 
-// app.use(cors(corsOptions));
+app.use(cors({
+    origin: "https://razoredgeanalytics.com",
+    credentials: true,
+  }));
 
 // DB Conection URL || URI
 dotenv.config({ path: "./config.env" });
